@@ -73,3 +73,34 @@ Don't wory. This is tiny text.
 Output:
 
 ![basicCode](./src/fontControl.png)
+
+## Use Special Keywords
+
+There have some special keyword in LaTex which are use in defferent purpose like `%`, `$`, `#`. If we try to use this keywords we got error form compiler. That's why we have to use `escape sign` for this. On the other hand sometime we have to use `copyright` or `registered` symbol. We can also make them using this escape charecter.
+
+```tex
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Programming with YoutubeUniversity}
+\author{Md. Sohan Millat Sakib}
+\date{December 2024}
+
+\begin{document}
+
+\maketitle
+\section{Apple Company}
+The company shares fell just over 2\% on Monday to close at \$175.74, reversing earlier gains that saw them aproach the \$182.86 price needed to record a \$3 trillion market value.
+% using escape charecter for % and $
+
+\# \\  % using escape charecter for #
+\copyright\\
+\textregistered   % using escape charecter for those symbol
+
+\end{document}
+
+```
+
+Output:
+
+![basicCode](./src/escapeCharecter.png)
