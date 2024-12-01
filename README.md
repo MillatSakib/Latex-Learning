@@ -34,3 +34,42 @@
 Output:
 
 ![basicCode](./src/baiscCode.png)
+
+## Font Control:
+
+Here we will learn how can we change different parameter of font or text.
+
+```tex
+\documentclass{article}
+
+\title{Programming with YoutubeUniversity}
+\author{Md. Sohan Millat Sakib}
+\date{December 2024}
+
+\begin{document}
+
+\maketitle
+\vspace{-5mm}
+\section{Bangladesh}
+\large
+\textbf{Bangladesh is a small and beautiful country in South Asia.\\} %this is for make bold font
+
+\small
+\textit{We get independence in 1971 from Pakistan after a long war.\\}  %this is for make italic font
+
+\huge
+\underline{Because of the sacrifice of millions of freedom fighters.\\}
+
+\large
+\textbf{textit{16 December is our Victory Dasy because this day Pakistani army surrenderd}}
+
+\tiny
+Don't wory. This is tiny text.
+
+\end{document}
+
+```
+
+Output:
+
+![basicCode](./src/fontControl.png)
