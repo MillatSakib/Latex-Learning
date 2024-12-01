@@ -104,3 +104,36 @@ The company shares fell just over 2\% on Monday to close at \$175.74, reversing 
 Output:
 
 ![basicCode](./src/escapeCharecter.png)
+
+## Alignment & Layout
+
+```tex
+\documentclass{article}
+\usepackage[a4 paper, landscape]{geometry} % import packagge for page setup
+
+\title{Programming with YoutubeUniversity}
+\author{Md. Sohan Millat Sakib}
+\date{December 2024}
+
+\begin{document}
+\maketitle
+
+
+\begin{flushleft}   % This is for left alignment
+WorldCuup FootBall Quatar 2024
+\end{flushleft}
+
+\begin{flushright}    % This is for right alignment
+WorldCuup FootBall Quatar 2024
+\end{flushright}
+
+\begin{center}     % This is for center alignment
+WorldCuup FootBall Quatar 2024
+\end{center}
+
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/alignmentAndLayout.png)
