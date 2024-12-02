@@ -260,3 +260,36 @@ hey.
 Output:
 
 ![basicCode](./src/headerfooter.png)
+
+## Custom Header Footer:
+
+```tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Chapter 1}
+\chead{Ruhul Amin}
+\rhead{1}
+\renewcommand{\headrulewidth}{0 pt}
+
+\lfoot{bookname}
+\cfoot{www.google.com}
+\rfoot{save the world}
+
+\fancypagestyle{style}{\fancyhf{}\fancyhead[l]{Mongol Groho}\fancyhead[c]{Chader Desh}\fancyhead[r]{2}}
+\fancyfoot[1]{a}\fancyfoot[c]{b}\fancyfoot[r]{c}
+\begin{document}
+hey.
+\newpage
+\section{Second Page}
+% \thispagestyle{empty} % this is for clear page header footer
+\thispagestyle{style}
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/customHeaderFooter1.png)
+
+![basicCode](./src/customHeaderFooter2.png)
