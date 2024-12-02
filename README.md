@@ -137,3 +137,78 @@ WorldCuup FootBall Quatar 2024
 Output:
 
 ![basicCode](./src/alignmentAndLayout.png)
+
+## List
+
+Here All type of list code are available. Please follow the code below:
+
+```tex
+\documentclass{article}
+\usepackage{paralist} % this package is for the list which will contain side by side
+\usepackage{enumitem}  % this package is for making the custom item list
+\title{Programming with YoutubeUniversity}
+\author{Md. Sohan Millat Sakib}
+\date{December 2024}
+
+\begin{document}
+\maketitle
+
+\section{Football}
+\begin{itemize}
+    \item Brazil
+    \item Arzentina
+    \item Japan
+    \item Ghana
+\end{itemize}
+
+\section{Cricket}
+\begin{enumerate}
+    \item Bangladesh
+    \begin{itemize}
+        \item Shakib
+        \item Tamim
+        \item Rony
+    \end{itemize}
+    \item India
+    \item USA
+    \item USB
+\end{enumerate}
+
+\section{Foods}     % this are works for importing paralist package
+\begin{inparaenum}
+\item apple
+\item orange
+\item tea
+\end{inparaenum}
+
+\section{Country}  %this are works for enumitem package
+\begin{enumerate}[label=\alph*.]
+    \item Bangladesh
+\end{enumerate}
+
+
+\section{Country}
+\begin{enumerate}[label=\alph*.]
+    \item Bangladesh
+\end{enumerate}
+
+
+\section{Country}
+\begin{enumerate}[label=\roman*.]
+    \item Bangladesh
+\end{enumerate}
+
+\section{Country}
+\begin{enumerate}[label=\roman*.,start = 3]
+    \item Bangladesh
+\end{enumerate}
+
+
+\end{document}
+
+```
+
+Output:
+
+![basicCode](./src/item1.png)
+![basicCode](./src/item2.png)
