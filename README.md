@@ -293,3 +293,92 @@ Output:
 ![basicCode](./src/customHeaderFooter1.png)
 
 ![basicCode](./src/customHeaderFooter2.png)
+
+## Image
+
+Shortcut way to to use image:
+
+```tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\begin{document}
+\includegraphics[scale=0.4]{home.png}
+\includegraphics[scale=.2]{ss4.jpg}
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/basicImage.png)
+
+Right way to add image on latex file:
+
+```tex
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\section{About the Home}
+This is a demo home for Home automation. Anyone can on off the light of this home using the internet. For checkout this fig \ref{fig:home}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{home.png}
+\caption{Caption of Human Home}
+\label{fig:home}
+\end{figure}
+
+This is my automatin fontend. Checkout it on fig \ref{fig:fontend}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{ss4.jpg}
+\caption{Caption of Automation frontend}
+\label{fig:fontend}
+\end{figure}
+
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/rightWayImage.png)
+
+If we want that two image will keep on side by side then we can write that code:
+
+```tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subcaption} % Required for subfigure environment
+
+\begin{document}
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{0.45\textwidth} % Adjust width to take up more space
+    \centering
+    \includegraphics[width=\linewidth]{home.png} % Scale to subfigure width
+    \caption{Human Body}
+\end{subfigure}
+\hspace{0.05\textwidth} % Fine-tune horizontal spacing between images
+\begin{subfigure}{0.25\textwidth} % Make the second subfigure width equal
+    \centering
+    \includegraphics[width=\linewidth]{ss4.jpg} % Scale to subfigure width
+    \caption{Tree}
+\end{subfigure}
+\caption{Two images with reduced spacing between them.}
+\label{fig:aligned-images}
+\end{figure}
+
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/sidebysideImage.png)
