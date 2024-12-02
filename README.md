@@ -212,3 +212,25 @@ Output:
 
 ![basicCode](./src/item1.png)
 ![basicCode](./src/item2.png)
+
+## URL and Hyper Link:
+
+```tex
+\documentclass{article}
+\usepackage{url, hyperref}   %here we import the url and hyperref package
+\title{Programming with YoutubeUniversity}
+\author{Md. Sohan Millat Sakib}
+\date{December 2024}
+
+\begin{document}
+\maketitle
+
+\section{My URL}
+\href{https://millatsakib.github.io/}{My Portfolio} \\
+\url{www.google.com}
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/Hyperlink&URL.png)
