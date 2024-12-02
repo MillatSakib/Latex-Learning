@@ -234,3 +234,29 @@ Output:
 Output:
 
 ![basicCode](./src/Hyperlink&URL.png)
+
+## Header Footer:
+
+```tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Chapter 1}
+\chead{Ruhul Amin}
+\rhead{1}
+\renewcommand{\headrulewidth}{0 pt}
+
+\lfoot{bookname}
+\cfoot{www.google.com}
+\rfoot{save the world}
+
+\begin{document}
+hey.
+\end{document}
+
+```
+
+Output:
+
+![basicCode](./src/headerfooter.png)
