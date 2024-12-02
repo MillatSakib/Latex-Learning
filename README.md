@@ -382,3 +382,69 @@ If we want that two image will keep on side by side then we can write that code:
 Output:
 
 ![basicCode](./src/sidebysideImage.png)
+
+## Table:
+
+We can make the table form [Here](https://tableconvert.com/latex-generator). The basic code of table are given below:
+
+```tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subcaption} % Required for subfigure environment
+
+\begin{document}
+\renewcommand{\arraystretch}{3.5} % This is for making gap on X axis
+\setlength{\tabcolsep}{10pt}  % This is for making gap on Y axis
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        Amar sonar bangla ami tomay valobasi. & ~ \\ \hline
+        ~ & ~ \\ \hline
+    \end{tabular}
+    \label{ipukljkl}
+\end{table}
+
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/table.png)
+
+## Mathmethical Equation:
+
+You can Generate the Mathmatica equation from [this](https://editor.codecogs.com/) website.
+
+```tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subcaption} % Required for subfigure environment
+
+\begin{document}
+\begin{center}
+Donate Blood, Save A smile \\
+Coding with YoutubeUniversity
+\end{center}
+
+$E = mc^2$  \\ % This is default superscript
+$ x = a^{y+z} $ % This is default superscript
+
+$$E = mc^2 $$   % This is centrelized superscript
+
+$ log_{10} $
+
+\begin{equation}
+    \sum_{i+1}^{\infty}
+    \prod_{i+1}^{\infty}
+    \int_{i+1}^{\infty}
+    \lim_{a\to7}
+\end{equation}
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/math.png)
