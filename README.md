@@ -448,3 +448,48 @@ $ log_{10} $
 Output:
 
 ![basicCode](./src/math.png)
+
+## Algorithm
+
+```tex
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ruled, vlined]{algorithm2e}  % This package must be use befor use the algorithm
+
+
+\begin{document}
+\begin{center}
+    Conding with YoutubeUniversity
+
+\end{center}
+\begin{algorithm}
+\LinesNumbered
+\SetAlgoLined
+\caption{Random Algorithm practice}
+\KwIn{a,b,c}
+\kwResult{Sum}
+\KwData{1,2,3}
+If{$a>10$}{
+print \;
+print
+}
+\ElseIf($a<100$){
+print \;
+}
+
+\While{$a>b$}{
+print a\;
+a++;
+a--;
+}
+
+\For{int a = 10; $a<30$; a++}{
+print statement1\;
+}
+\end{algorithm}
+\end{document}
+```
+
+Output:
+![basicCode](./src/algorithm.png)
