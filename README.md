@@ -492,4 +492,38 @@ print statement1\;
 ```
 
 Output:
+
 ![basicCode](./src/algorithm.png)
+
+## Theorem, Lemma
+
+```tex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}[theorem]
+\begin{document}
+\begin{center}
+        Conding with YoutubeUniversity
+\end{center}
+
+\begin{theorem}
+    My name is Sakib.
+\end{theorem}
+\begin{corollary}
+        fdafkds
+    \end{corollary}
+\begin{theorem}[Pythagoras]
+    My name is Pythagoras.
+\end{theorem}
+
+\begin{lemma}
+    statement lemma
+\end{lemma}
+\end{document}
+```
+
+Output:
+
+![basicCode](./src/theorem.png)
